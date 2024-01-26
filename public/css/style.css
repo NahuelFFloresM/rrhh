@@ -1,0 +1,8 @@
+.avatar_image{
+  max-width: 300px;
+  max-height: auto;
+}
+
+tr{
+  cursor: pointer;
+}
