@@ -1,14 +1,20 @@
 'use strict';
 
+require('dotenv').config();
+
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const connectDB = require('./server.js');
 
+connectDB();
 
 var indexRouter = require('./routes/index');
 var fichaRouter = require('./routes/fichas');
+var dataRouter = require('./routes/data');
 
 var app = express();
 
@@ -26,6 +32,7 @@ app.use('/scripts', express.static(__dirname + '/node_modules/'));
 
 app.use('/', indexRouter);
 app.use('/fichas', fichaRouter);
+app.use('/data', dataRouter);
 app.use('/login', function(req,res,next){
   res.render('login');
 });

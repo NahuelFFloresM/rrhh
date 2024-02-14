@@ -6,4 +6,9 @@ router.get('/nueva/basica', function(req, res, next) {
   res.render('newf');
 });
 
+router.get('/nuevatipo', function(req,res,next){
+  res.render('newt');
+});
+
+
 module.exports = router;
