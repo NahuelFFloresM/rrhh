@@ -6,7 +6,6 @@ var data;
  * @age se va a ingresar fecha(por calenadrio o a mano) para calcular automaticamente la fecha a colocar
  */
 
-
 document.addEventListener("DOMContentLoaded", async function(event) {
   const options = {};
 
@@ -109,16 +108,16 @@ function warmupText(data){
           ${item.dia}
         </button>
       </h2>
-      <div id="collapsewarmup${item.dia}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div id="collapsewarmup${item.dia}" class="accordion-collapse collapse" data-bs-parent="#calentamiento_collapse">
         <div class="accordion-body">
             <ul class="list-group">`
-    item.warmup.forEach(wp => {
-      const wpinfo = wp.split('/');
-      text+=`<li class="list-group-item d-flex justify-content-between align-items-center">
-      ${wpinfo[0]}
-      <span class="badge bg-primary rounded-pill">${wpinfo[1]}</span>
-    </li>`
-    })
+              item.warmup.forEach(wp => {
+                const wpinfo = wp.split('/');
+                text+=`<li class="list-group-item d-flex justify-content-between align-items-center">
+                ${wpinfo[0]}
+                <span class="badge bg-primary rounded-pill">${wpinfo[1]}</span>
+              </li>`
+              })
     text+=`
             </ul>
         </div>

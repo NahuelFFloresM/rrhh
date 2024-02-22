@@ -10,43 +10,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-:root {
-  --blue: #4e73df;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #e74a3b;
-  --orange: #fd7e14;
-  --yellow: #f6c23e;
-  --green: #1cc88a;
-  --teal: #20c9a6;
-  --cyan: #36b9cc;
-  --white: #fff;
-  --gray: #858796;
-  --gray-dark: #5a5c69;
-  --primary: #4e73df;
-  --secondary: #858796;
-  --success: #1cc88a;
-  --info: #36b9cc;
-  --warning: #f6c23e;
-  --danger: #e74a3b;
-  --light: #f8f9fc;
-  --dark: #5a5c69;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -66,7 +29,6 @@ body {
   line-height: 1.5;
   color: #858796;
   text-align: left;
-  background-color: #fff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -4489,9 +4451,10 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  /* background-color: #fff; */
   background-clip: border-box;
-  border: 1px solid #e3e6f0;
+  border: 1px solid;
+  /* border: 1px solid #e3e6f0; */
   border-radius: 0.35rem;
 }
 
@@ -4552,8 +4515,9 @@ input[type="button"].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: #f8f9fc;
-  border-bottom: 1px solid #e3e6f0;
+  /* background-color: #f8f9fc; */
+  border-bottom: 1px solid;
+  /* border-bottom: 1px solid #e3e6f0; */
 }
 
 .card-header:first-child {
@@ -5229,7 +5193,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   flex: 1;
 }
 
-.list-group {
+/* .list-group {
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -5321,7 +5285,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .list-group-horizontal > .list-group-item + .list-group-item.active {
   margin-left: -1px;
   border-left-width: 1px;
-}
+} */
 
 @media (min-width: 576px) {
   .list-group-horizontal-sm {
@@ -5637,7 +5601,7 @@ a.close.disabled {
   padding: 0.75rem;
 }
 
-.modal-open {
+/* .modal-open {
   overflow: hidden;
 }
 
@@ -5848,7 +5812,7 @@ a.close.disabled {
   .modal-xl {
     max-width: 1140px;
   }
-}
+} */
 
 .tooltip {
   position: absolute;
@@ -9797,7 +9761,7 @@ a:focus {
 }
 
 #wrapper #content-wrapper {
-  background-color: #f8f9fc;
+  /* background-color: #f8f9fc; */
   width: 100%;
   overflow-x: hidden;
 }
@@ -11279,3 +11243,4 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
